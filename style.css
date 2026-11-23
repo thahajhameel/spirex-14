@@ -1,0 +1,192 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f7f8fc;
+    color: #20243a;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: white;
+}
+
+nav h2 span {
+    color: #635bff;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    margin: 0 15px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background: #635bff;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 7px;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #ecebff;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 18px;
+}
+
+.hero h1 span {
+    color: #635bff;
+}
+
+.hero p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.search {
+    background: white;
+    padding: 12px;
+    border-radius: 10px;
+    max-width: 750px;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.search input, .search select {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    padding: 12px;
+}
+
+.internships {
+    padding: 65px 8%;
+}
+
+.internships h2, .about h2 {
+    font-size: 30px;
+}
+
+.subtitle {
+    color: #777;
+    margin-top: 10px;
+}
+
+.job-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.job-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px #00000012;
+}
+
+.job-card h3 {
+    margin: 15px 0 8px;
+}
+
+.company {
+    color: #777;
+}
+
+.tag {
+    display: inline-block;
+    background: #eeedff;
+    color: #635bff;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.details {
+    margin: 18px 0;
+    line-height: 2;
+    color: #666;
+    font-size: 14px;
+}
+
+.apply {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.about {
+    background: #20243a;
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.about p {
+    color: #ccc;
+    margin-top: 15px;
+}
+
+footer {
+    padding: 22px;
+    text-align: center;
+    background: white;
+    color: #777;
+}
+
+@media(max-width: 850px) {
+    .job-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 600px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 5px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .search {
+        flex-direction: column;
+    }
+
+    .search input, .search select {
+        width: 100%;
+    }
+
+    .job-container {
+        grid-template-columns: 1fr;
+    }
+}
